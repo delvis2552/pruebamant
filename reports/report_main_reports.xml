@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<odoo> 
+    <record id="action_reports_main" model="ir.actions.report">
+        <field name="name">Informe de entregas</field>
+        <field name="model">reports.main</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">module_reports_maintenance_test.reports_main</field>
+        <field name="report_file">module_reports_maintenance_test.reports_main</field>
+        <field name="binding_model_id" ref="module_reports_maintenance_test.model_reports_main"/>
+        <field name= "binding_type">report</field>
+    </record>
+</odoo>

@@ -1,1 +1,1 @@
-# pruebamant
+# odoo_course

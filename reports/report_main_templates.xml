@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<odoo> 
+                   <p><span t-field="o.name"/></p>
+    <template id="reports_main">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <p style="text-align: center;"><strong>Entrega inicial de equipos</strong></p>
+                    <table style="border-collapse: collapse; width: 100%; height: 32px;" border="1">
+                        <tbody>
+                            <tr style="height: 18px;">
+                                <td style="width: 16.6667%; height: 18px; text-align: center;"><strong>Empresa</strong></td>
+                                <td style="width: 16.6667%; height: 18px; text-align: center;">
+                                    <span t-field="o.type"/>
+                                </td>
+
+                                <td style="width: 16.6667%; height: 18px; text-align: center;"><strong>Sucursal</strong></td>
+                                <td style="width: 16.6667%; height: 18px; text-align: center;">
+                                    <span t-field="o.branch"/>
+                                </td>
+
+                                <td style="width: 16.6667%; height: 18px; text-align: center;"><strong>Fecha de entrega</strong></td>
+                                <td style="width: 16.6667%; height: 18px; text-align: center;">
+                                    <span t-field="o.date_del"/>
+                                </td>
+                            </tr>
+                            <tr style="height: 14px;">
+                                <td style="width: 16.6667%; height: 14px; text-align: center;"><strong>Trabajador</strong></td>
+                                <td style="width: 16.6667%; height: 14px; text-align: center;">
+                                    <span t-field="o.name"/>
+                                </td>
+                                <td style="width: 16.6667%; height: 14px; text-align: center;"><strong>Cedula</strong></td>
+                                <td style="width: 16.6667%; height: 14px; text-align: center;">
+                                    <span t-field="o.identification"/>
+                                </td>
+                                <td style="width: 16.6667%; height: 14px; text-align: center;"><strong>Puesto</strong></td>
+                                <td style="width: 16.6667%; height: 14px; text-align: center;">
+                                    <span t-field="o.position_work"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </t>
+    </template>
+</odoo>
